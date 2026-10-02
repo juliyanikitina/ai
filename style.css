@@ -12,19 +12,19 @@ h1 em{display:inline-block;border-radius:9px;padding:0 10px 5px;margin-top:8px}
 .hero .lead{font-size:18px}
 .hero .sublead{font-size:14px}
 .button{border-radius:12px;font-weight:600;box-shadow:0 5px 14px #0000000c}
-.workspace{background:#343c46;color:#f7f9fb;border:1px solid #4c5662;border-radius:28px;box-shadow:0 18px 45px #11111916;display:flex;flex-direction:column;justify-content:center}
+.workspace{background:#202024;color:#f5f5f7;border:1px solid #38383e;border-radius:28px;box-shadow:0 18px 45px #11111916;display:flex;flex-direction:column;justify-content:center}
 .window-top{border-color:#424248;color:#b9b9c2;padding:21px 26px}
 .window-top>span:first-child{color:#6e6e79}
 .workspace-inner{padding:30px 25px}
 .workspace-label{color:#b9b9c2}
 .workspace h2{font-size:36px;font-weight:500;letter-spacing:-1.2px;margin-bottom:32px}
-.agent-card{background:#46515d;border:1px solid #5d6976;border-radius:16px;box-shadow:none;padding:20px 15px;margin-bottom:13px}
+.agent-card{background:#303035;border:1px solid #46464d;border-radius:16px;box-shadow:none;padding:20px 15px;margin-bottom:13px}
 .agent-card p{color:#c1c1ca;line-height:1.55}
 .agent-card h3{font-weight:500}
 .avatar{color:#171719;border-radius:12px}
 .avatar.pink{background:#e2e2e6}
 .arrow{color:var(--lime)}
-.prompt{border-color:#64717e;background:#3d4752;border-radius:13px;line-height:1.6;margin-top:26px}
+.prompt{border-color:#52525a;background:#29292e;border-radius:13px;line-height:1.6;margin-top:26px}
 .prompt>span{color:#bdbdc5}
 .prompt>b{background:var(--lime);color:#171719}
 .example{color:#aaaab5;line-height:1.5}
@@ -48,11 +48,11 @@ h1 em{display:inline-block;border-radius:9px;padding:0 10px 5px;margin-top:8px}
 .lesson-symbol{height:62px;width:62px;font-size:33px}
 .result{background:#eeeef2;border:1px solid #e4e4ea;border-radius:12px;padding:16px 20px;line-height:1.6}
 .result span{color:#606068;font-weight:700}
-.dark-section{max-width:1168px;margin:35px auto 0;border-radius:28px;background:#343c46;box-shadow:0 18px 40px #15151d0c}
+.dark-section{max-width:1168px;margin:35px auto 0;border-radius:28px;background:#202024;box-shadow:0 18px 40px #15151d0c}
 .dark-section .section{padding:45px 36px}
 .dark-section h2{font-size:45px}
 .format-grid{gap:16px;margin-top:36px}
-.format-grid>div{background:#46515d;border:1px solid #5d6976;padding:25px;border-radius:18px}
+.format-grid>div{background:#2d2d32;border:1px solid #43434a;padding:25px;border-radius:18px}
 .format-grid p{font-size:14px;color:#ceced5;margin-bottom:0}
 .join{gap:24px;align-items:start;padding-top:75px}
 .join>div:first-child{background:#ffffff;border:1px solid #ffffff;border-radius:24px;padding:36px}
