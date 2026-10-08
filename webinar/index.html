@@ -18,8 +18,9 @@
     .lead{font-size:clamp(19px,2.5vw,25px);line-height:1.38;margin:0 0 22px}.date{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.date b{background:var(--yellow);padding:12px 16px;border-radius:14px;font-size:18px}
     .button{display:block;width:100%;max-width:520px;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-weight:900;font-size:20px;padding:18px 24px;border-radius:16px;box-shadow:0 12px 28px rgba(240,24,24,.27)}.button:hover{transform:translateY(-2px)}
     .note{font-size:14px;color:var(--muted);margin:12px 0 0;max-width:560px}.section{padding:58px 0}.section h2{font-size:clamp(32px,4.5vw,54px);line-height:1;margin:0 0 24px;letter-spacing:-.04em}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}.card b{display:block;font-size:20px;margin-bottom:8px}.card p{margin:0;color:#454545;line-height:1.5}
+    .result{margin:12px auto 64px;background:#191919;color:#fff;border-radius:28px;padding:clamp(28px,5vw,54px);display:grid;grid-template-columns:1.08fr .92fr;gap:38px;align-items:center}.result h2{font-size:clamp(32px,4.5vw,54px);line-height:1.02;letter-spacing:-.04em;margin:0 0 18px}.result h2 span{color:var(--yellow)}.result p{font-size:19px;line-height:1.5;margin:0;color:#ededed}.result-list{display:grid;gap:12px}.result-item{background:#292929;border:1px solid #414141;border-radius:16px;padding:16px 18px;font-size:17px;line-height:1.35}.result-item:before{content:'✓';display:inline-grid;place-items:center;width:25px;height:25px;margin-right:9px;border-radius:50%;background:var(--red);color:#fff;font-weight:900}.cta{padding:0 0 72px;text-align:center}.cta h2{font-size:clamp(34px,5vw,58px);letter-spacing:-.045em;line-height:1;margin:0 0 15px}.cta p{font-size:19px;line-height:1.5;max-width:720px;margin:0 auto 24px;color:#404040}.cta .button{margin:0 auto}.cta .note{margin:12px auto 0}
     footer{padding:10px 0 34px;color:#777;font-size:13px}
-    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:18px}.copy-block{order:2}.visual{order:1}.grid{grid-template-columns:1fr}.top{font-size:14px}.button{font-size:18px}}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:18px}.copy-block{order:2}.visual{order:1}.grid,.result{grid-template-columns:1fr}.top{font-size:14px}.button{font-size:18px}}
   </style>
 </head>
 <body>
@@ -44,6 +45,24 @@
         <article class="card"><b>Новые способы заработка</b><p>Какие решения нужны предпринимателям и экспертам и за какой результат они готовы платить.</p></article>
         <article class="card"><b>Первые шаги</b><p>С чего начать, как выбрать понятную услугу и превратить навык работы с ИИ в источник дохода.</p></article>
       </div>
+    </section>
+    <section class="wrap result">
+      <div>
+        <h2>Поймёшь, как <span>зарабатывать</span> на возможностях ИИ</h2>
+        <p>Без сложных технических терминов разберём два пути: создавать решения для клиентов или внедрять ИИ в собственный бизнес, чтобы экономить время, снижать расходы и быстрее расти.</p>
+      </div>
+      <div class="result-list">
+        <div class="result-item">Выберешь подходящее направление для заработка</div>
+        <div class="result-item">Увидишь, какие услуги можно предлагать уже сейчас</div>
+        <div class="result-item">Поймёшь, что можно автоматизировать в своём бизнесе</div>
+        <div class="result-item">Получишь понятный первый шаг без перегруза</div>
+      </div>
+    </section>
+    <section class="wrap cta">
+      <h2>Хочешь увидеть возможности ИИ для себя?</h2>
+      <p>Приходи на бесплатный вебинар и выбери, как использовать ИИ: для нового дохода, развития своей профессии или роста бизнеса.</p>
+      <a class="button" href="https://t.me/ai_komanda_intensive_bot?start=webinar" target="_blank" rel="noopener noreferrer">Зарегистрироваться бесплатно →</a>
+      <p class="note">Регистрация займёт меньше минуты. Напоминание и ссылка на эфир придут в Telegram-боте.</p>
     </section>
   </main>
   <footer class="wrap">Юлия Никитина · ИИ-агенты и цифровые продукты</footer>
