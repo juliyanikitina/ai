@@ -88,9 +88,12 @@ h2 { margin-bottom: 26px; font-size: clamp(38px, 4.2vw, 60px); }
 .price-card { position: relative; display: flex; flex-direction: column; min-height: 690px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: 0 18px 48px rgba(54,43,42,.08); }
 .price-card.primary { background: var(--white); border-color: rgba(227,27,42,.45); }
 .price-card.premium { background: var(--graphite); color: var(--white); box-shadow: 0 22px 54px rgba(54,43,42,.14); }
-.popular { position: absolute; top: -16px; right: 18px; padding: 8px 14px; border: 0; border-radius: 999px; background: var(--red); color: var(--white); font-size: 11px; font-weight: 900; }
-.price-top { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 44px; font-size: 11px; font-weight: 900; letter-spacing: .08em; }
-.price-top span { color: var(--red); }
+.popular { position: absolute; top: -16px; right: 18px; padding: 9px 15px; border: 0; border-radius: 999px; background: var(--red); color: var(--white); box-shadow: 0 8px 22px rgba(227,27,42,.2); font-size: 11px; font-weight: 900; }
+.price-top { display: flex; align-items: center; justify-content: space-between; gap: 9px; margin-bottom: 38px; font-size: 10px; font-weight: 900; letter-spacing: .06em; }
+.price-top span, .price-top b { padding: 8px 10px; border-radius: 999px; }
+.price-top span { background: var(--red); color: var(--white); }
+.price-top b { background: var(--blush); color: var(--ink); white-space: nowrap; }
+.premium .price-top b { background: var(--white); }
 .price-card h3 { min-height: 57px; margin-bottom: 15px; font-size: 25px; }
 .price { margin-bottom: 18px; font-family: Georgia, "Times New Roman", serif; font-size: 44px; font-weight: 700; letter-spacing: -.045em; line-height: 1; }
 .price small { font-size: 22px; }
