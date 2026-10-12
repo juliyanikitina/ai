@@ -108,9 +108,9 @@ h2 { margin-bottom: 28px; font-size: clamp(48px, 5.6vw, 80px); }
 .cost-note { margin: 34px 0 0; padding: 22px 25px; border-left: 6px solid var(--red); border-radius: 0 14px 14px 0; background: var(--white); color: #555; font-size: 14px; }
 
 .about-section { background: var(--red); color: var(--white); }
-.about-grid { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 72px; padding-block: 95px; }
-.about-photo { overflow: hidden; height: 600px; border: 2px solid var(--ink); border-radius: 26px; background: var(--white); box-shadow: 10px 10px 0 rgba(21,21,21,.16); }
-.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 24%; }
+.about-grid { display: grid; grid-template-columns: 176px minmax(0, 1fr); align-items: start; gap: 42px; padding-block: 82px; }
+.about-photo { overflow: hidden; width: 176px; aspect-ratio: 1; border: 2px solid var(--ink); border-radius: 50%; background: var(--white); box-shadow: 7px 7px 0 rgba(21,21,21,.16); }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
 .about-grid p { max-width: 670px; color: rgba(255,255,255,.82); font-size: 18px; }
 .big-quote { color: var(--white) !important; font-size: clamp(25px, 3vw, 39px) !important; font-weight: 900; line-height: 1.2; }
 
@@ -166,8 +166,8 @@ h2 { margin-bottom: 28px; font-size: clamp(48px, 5.6vw, 80px); }
   .steps span { margin-bottom: 65px; }
   .price-card { padding: 22px; }
   .price { font-size: 47px; }
-  .about-grid { gap: 44px; }
-  .about-photo { height: 500px; }
+  .about-grid { grid-template-columns: 140px minmax(0, 1fr); gap: 28px; }
+  .about-photo { width: 140px; }
   .final-grid { grid-template-columns: 1fr; }
   .footer { flex-direction: column; }
 }
