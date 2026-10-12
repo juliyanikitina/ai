@@ -161,12 +161,14 @@ h2 { margin-bottom: 26px; font-size: clamp(38px, 4.2vw, 60px); }
   nav > a:not(.nav-cta) { display: none; }
   .nav-cta { padding: 10px 13px; font-size: 12px; }
   .hero { min-height: auto; gap: 42px; padding-block: 45px 60px; }
-  h1 { font-size: clamp(44px, 14vw, 64px); }
+  .hero-copy { min-width: 0; max-width: 100%; }
+  h1 { max-width: 100%; font-size: clamp(32px, 9.8vw, 46px); }
   h2 { font-size: clamp(36px, 11vw, 52px); }
   .lead { font-size: 18px; }
   .hero-actions, .button { width: 100%; }
   .text-link { text-align: center; }
   .expert-card { align-items: flex-start; gap: 16px; margin-bottom: 36px; }
+  .expert-card-copy { min-width: 0; }
   .expert-card > img { width: 82px; height: 82px; }
   .expert-card-copy strong { font-size: 23px; }
   .expert-card-copy p { font-size: 13px; }
