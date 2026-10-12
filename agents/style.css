@@ -45,14 +45,8 @@ h2 { margin-bottom: 28px; font-size: clamp(48px, 5.6vw, 80px); }
 
 .portrait-card { position: relative; overflow: hidden; min-height: 632px; border: 2px solid var(--ink); border-radius: 28px; background: var(--white); box-shadow: 12px 12px 0 var(--yellow), var(--shadow); }
 .portrait-top { position: relative; z-index: 2; display: flex; justify-content: space-between; gap: 10px; padding: 15px 18px; background: var(--ink); color: var(--white); font-size: 11px; letter-spacing: .12em; }
-.portrait-card > img { width: 100%; height: 520px; object-fit: cover; object-position: 63% 25%; }
+.portrait-card > img { width: 100%; height: 520px; object-fit: cover; object-position: 50% 22%; }
 .portrait-card::after { content: ""; position: absolute; inset: 44px 0 86px; background: linear-gradient(180deg, transparent 55%, rgba(15,15,15,.12)); pointer-events: none; }
-.floating-card { position: absolute; z-index: 3; display: flex; align-items: center; gap: 12px; min-width: 202px; padding: 13px 16px; border: 2px solid var(--ink); border-radius: 14px; background: var(--white); box-shadow: 5px 5px 0 var(--ink); font-size: 13px; line-height: 1.2; }
-.floating-card b { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 9px; background: var(--yellow); font-size: 14px; }
-.floating-card strong { color: var(--red); font-size: 16px; }
-.card-one { left: 18px; top: 90px; }
-.card-two { right: 18px; bottom: 130px; }
-.card-two b { background: var(--red); color: var(--white); }
 .portrait-caption { position: relative; z-index: 4; display: flex; flex-direction: column; gap: 3px; min-height: 84px; padding: 16px 20px; background: var(--white); }
 .portrait-caption strong { font-size: 22px; }
 .portrait-caption span { font-size: 13px; color: #595959; }
@@ -116,7 +110,7 @@ h2 { margin-bottom: 28px; font-size: clamp(48px, 5.6vw, 80px); }
 .about-section { background: var(--red); color: var(--white); }
 .about-grid { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 72px; padding-block: 95px; }
 .about-photo { overflow: hidden; height: 600px; border: 2px solid var(--ink); border-radius: 26px; background: var(--white); box-shadow: 10px 10px 0 var(--yellow); }
-.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 28%; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 24%; }
 .about-grid p { max-width: 670px; color: rgba(255,255,255,.82); font-size: 18px; }
 .big-quote { color: var(--white) !important; font-size: clamp(25px, 3vw, 39px) !important; font-weight: 900; line-height: 1.2; }
 
