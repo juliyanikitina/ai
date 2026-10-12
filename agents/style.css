@@ -1,6 +1,6 @@
 :root {
   --red: #e31b2a;
-  --red-dark: #bd101e;
+  --red-dark: #e31b2a;
   --blush: #f1f1f1;
   --cream: #fbf8f3;
   --ink: #262526;
@@ -41,8 +41,8 @@ h2 { margin-bottom: 26px; font-size: clamp(38px, 4.2vw, 60px); }
 .hero-points { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 32px; }
 .hero-points span { padding: 9px 14px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,253,251,.72); font-size: 13px; font-weight: 700; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; }
-.button { display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 27px; border: 1px solid var(--red-dark); border-radius: 999px; background: var(--red); color: var(--white); box-shadow: 0 14px 32px rgba(127,28,45,.18); text-decoration: none; font-weight: 800; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
-.button:hover { transform: translateY(-2px); background: var(--red-dark); box-shadow: 0 18px 38px rgba(127,28,45,.22); }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 27px; border: 1px solid var(--red); border-radius: 999px; background: var(--red); color: var(--white); box-shadow: 0 14px 32px rgba(227,27,42,.18); text-decoration: none; font-weight: 800; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
+.button:hover { transform: translateY(-2px); background: var(--red); box-shadow: 0 18px 38px rgba(227,27,42,.24); }
 .text-link { font-size: 14px; font-weight: 900; text-underline-offset: 5px; }
 
 .expert-card { display: flex; align-items: center; gap: 22px; margin-bottom: 46px; }
