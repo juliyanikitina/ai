@@ -105,10 +105,13 @@ h2 { margin-bottom: 26px; font-size: clamp(38px, 4.2vw, 60px); }
 .price-card ul { display: grid; gap: 13px; margin: 12px 0 30px; padding: 0; list-style: none; }
 .price-card li { position: relative; padding-left: 25px; font-size: 14px; }
 .price-card li::before { content: "✓"; position: absolute; left: 0; top: -1px; color: var(--red); font-weight: 950; }
-.price-card .button { margin-top: auto; }
+.payment-actions { display: grid; gap: 10px; margin-top: auto; }
+.price-card .button { margin-top: 0; }
 .wide { width: 100%; padding-inline: 14px; text-align: center; }
 .secondary { background: var(--white); border-color: var(--red); color: var(--red); box-shadow: none; }
+.button-transfer { background: var(--white); border-color: var(--red); color: var(--red); box-shadow: none; }
 .premium .button { border-color: rgba(255,255,255,.35); box-shadow: 0 14px 32px rgba(0,0,0,.14); }
+.premium .button-transfer { background: transparent; border-color: rgba(255,255,255,.7); color: var(--white); box-shadow: none; }
 .cost-note { margin: 34px 0 0; padding: 22px 25px; border-left: 6px solid var(--red); border-radius: 0 14px 14px 0; background: var(--white); color: #555; font-size: 14px; }
 
 .about-section { background: var(--red); color: var(--white); }
