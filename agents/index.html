@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://juliyanikitina.github.io/ai/agents/">
   <title>ИИ-агенты под ключ — Юлия Никитина</title>
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
   <header class="topbar wrap">
@@ -108,7 +108,7 @@
             <li>План следующих агентов под твои процессы</li>
             <li>Библиотека из 950 готовых скиллов</li>
           </ul>
-          <a class="button wide" href="https://t.me/ai_komanda_intensive_bot?start=service_install" target="_blank" rel="noopener noreferrer">Выбрать установку ↗</a>
+          <a class="button wide" data-pay-format="individual" href="https://t.me/ai_komanda_intensive_bot?start=service_install" target="_blank" rel="noopener noreferrer">Оплатить установку · 15 555 ₽ ↗</a>
         </article>
 
         <article class="price-card">
@@ -123,7 +123,7 @@
             <li>Разбор следующей рабочей задачи</li>
             <li>План самостоятельных действий</li>
           </ul>
-          <a class="button secondary wide" href="https://t.me/ai_komanda_intensive_bot?start=service_consultation" target="_blank" rel="noopener noreferrer">Записаться на консультацию ↗</a>
+          <a class="button secondary wide" data-pay-format="consultation" href="https://t.me/ai_komanda_intensive_bot?start=service_consultation" target="_blank" rel="noopener noreferrer">Оплатить консультацию · 5 555 ₽ ↗</a>
         </article>
 
         <article class="price-card premium">
@@ -142,7 +142,7 @@
             <li><strong>Поддержка Юлии в личном рабочем чате</strong> между встречами</li>
             <li>Библиотека из 950 готовых скиллов</li>
           </ul>
-          <a class="button wide" href="https://t.me/ai_komanda_intensive_bot?start=service_support" target="_blank" rel="noopener noreferrer">Выбрать сопровождение ↗</a>
+          <a class="button wide" data-pay-format="support" href="https://t.me/ai_komanda_intensive_bot?start=service_support" target="_blank" rel="noopener noreferrer">Оплатить сопровождение · 35 555 ₽ ↗</a>
         </article>
       </div>
       <p class="cost-note"><strong>Важно:</strong> помощь с оформлением и настройкой подписок входит в услугу. Стоимость ChatGPT Plus, виртуального номера, карты и других сторонних сервисов оплачивается клиентом отдельно. Пароли, коды подтверждения и платёжные данные клиент вводит самостоятельно.</p>
@@ -152,7 +152,10 @@
       <div class="wrap about-grid">
         <div class="about-heading">
           <div class="eyebrow light"><span></span> КТО БУДЕТ РЯДОМ</div>
-          <h2>Юлия Никитина</h2>
+          <div class="about-name">
+            <img src="yulia-red-jacket.png?v=3" alt="Юлия Никитина" width="1086" height="1448">
+            <h2>Юлия Никитина</h2>
+          </div>
           <p class="big-quote">«Объясняю сложные технологии <span>простым языком</span> и сразу превращаю их в рабочие инструменты».</p>
         </div>
         <div class="about-notes">
@@ -187,5 +190,14 @@
   </main>
 
   <footer class="wrap footer"><span>© 2026 Юлия Никитина</span><a href="https://t.me/julya_nikitina_369" target="_blank" rel="noopener noreferrer">Telegram-канал ↗</a></footer>
+  <script>
+    const telegramId = new URLSearchParams(window.location.search).get("tg");
+    if (/^\d+$/.test(telegramId || "")) {
+      document.querySelectorAll("[data-pay-format]").forEach((button) => {
+        const format = button.dataset.payFormat;
+        button.href = `https://ai-komanda-s-yuley.ai-komanda-worker.workers.dev/pay?format=${format}&tg=${telegramId}`;
+      });
+    }
+  </script>
 </body>
 </html>
