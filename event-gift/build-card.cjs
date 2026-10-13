@@ -33,8 +33,10 @@ function escapeXml(value) {
     <rect width="1080" height="1350" fill="#f6f3ef"/>
     <rect x="34" y="34" width="1012" height="1282" rx="42" fill="#ffffff"/>
     <rect x="70" y="70" width="940" height="94" rx="47" fill="#ef2b2d"/>
-    <g transform="translate(102 91)" stroke="#fff" stroke-width="5" fill="none" stroke-linejoin="round">
-      <rect x="0" y="18" width="54" height="38" rx="4"/><path d="M27 18v38M-4 18h62M8 17C0 4 14-3 27 18M46 17C54 4 40-3 27 18"/>
+    <g transform="translate(99 85) scale(1.65)">
+      <path fill="#ffd21f" d="M4 14h28v19H4z"/><path fill="#d91521" d="M16 14h4v19h-4z"/>
+      <rect x="2" y="10" width="32" height="7" rx="2" fill="#ffd21f"/><path fill="#d91521" d="M16 10h4v7h-4z"/>
+      <path d="M18 10C15 4 8 2 7 6c-1 5 6 6 11 4Zm0 0c3-6 10-8 11-4 1 5-6 6-11 4Z" fill="none" stroke="#d91521" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <text x="186" y="129" class="b" font-size="28" fill="#fff" letter-spacing="1.4">ПОДАРОК УЧАСТНИКАМ МЕРОПРИЯТИЯ</text>
     <text x="78" y="250" class="b" font-size="72" fill="#171717"><tspan x="78">КАКИЕ</tspan><tspan x="78" dy="72">ИИ-СОТРУДНИКИ</tspan><tspan x="78" dy="72">НУЖНЫ ВАШЕМУ</tspan><tspan x="78" dy="72">БИЗНЕСУ</tspan><tspan x="78" dy="72" fill="#ef2b2d">ПРЯМО СЕЙЧАС?</tspan></text>
