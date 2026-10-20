@@ -196,3 +196,88 @@ h1{font-size:48px;letter-spacing:-2.5px}
 .campaign-visual{position:relative;margin-top:22px;margin-bottom:18px}.campaign-visual>img{display:block;width:100%;border-radius:26px;box-shadow:0 20px 55px #17171912}.campaign-caption{position:absolute;left:28px;bottom:28px;display:none}
 @media(max-width:760px){.hero-person{justify-content:flex-start}.hero-person img{order:0;width:72px;height:72px}.ai-hero-visual{min-height:205px}.campaign-visual{padding-left:16px;padding-right:16px}.campaign-visual>img{border-radius:20px}}
 @media(max-width:420px){.hero-person img{width:64px;height:64px}.hero-person strong{font-size:15px}.ai-hero-visual{min-height:180px}.ai-hero-visual>div{left:18px;top:22px;max-width:160px}.ai-hero-visual strong{font-size:20px}.campaign-visual{margin-top:8px}.campaign-visual>img{border-radius:15px}}
+
+/* Selling compact layout for the 29–30 October cohort. */
+body{overflow-x:hidden}
+.promo-chip{background:#ff2400!important;color:#fff!important;font-size:13px;font-weight:800;letter-spacing:.2px}
+.pain-offer,.audience-paths,.join{position:relative;overflow:hidden;isolation:isolate}
+.pain-offer>* ,.audience-paths>* ,.join>*{position:relative;z-index:1}
+.pain-offer:after,.audience-paths:after,.join:after{content:'';position:absolute;z-index:0;pointer-events:none;background:url('assets/ai-molecule-frame.png') center/contain no-repeat;opacity:.22}
+.pain-offer:after{inset:-18px -40px auto auto;width:430px;height:210px}
+.audience-paths:after{inset:auto -80px -20px auto;width:520px;height:240px;opacity:.17}
+.join:after{inset:-25px auto auto -90px;width:420px;height:205px;opacity:.14}
+.ai-map-gift{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:22px;background:#ffe500;border-radius:22px;padding-top:22px;padding-bottom:22px;margin-top:18px;position:relative;overflow:hidden}
+.ai-map-gift:after{content:'';position:absolute;right:210px;top:-70px;width:310px;height:170px;background:url('assets/ai-molecule-frame.png') center/contain no-repeat;opacity:.16;pointer-events:none}
+.ai-map-gift>*{position:relative;z-index:1}.gift-mark{display:grid;place-items:center;width:58px;height:58px;background:#ff2400;border-radius:16px;font-size:30px}.ai-map-gift span{font-size:9px;letter-spacing:1.3px;font-weight:900;color:#ff2400}.ai-map-gift h2{font-size:24px;margin:4px 0}.ai-map-gift p{font-size:12px;margin:0;color:#4d4727}.ai-map-gift .button{background:#ff2400;white-space:nowrap}
+.pain-offer{display:grid;grid-template-columns:1.02fr 1fr;gap:26px;padding-top:45px;padding-bottom:35px}
+.pain-copy{background:#202024;color:#fff;border-radius:24px;padding:29px}
+.pain-copy .eyebrow{color:#ffe500}
+.pain-copy h2{font-size:36px;margin:12px 0 16px;max-width:600px}
+.pain-copy p{font-size:14px;color:#d0d0d5;margin:0 0 19px;max-width:630px}
+.pain-answer{display:block;color:#ffe500;font-size:17px;line-height:1.4}
+.pain-tasks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-content:stretch}
+.pain-tasks article{background:#fff;border:1px solid #fff;border-radius:18px;padding:18px 16px;min-width:0}
+.pain-tasks span{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#ff2400;color:#fff;font-size:12px;font-weight:900}
+.pain-tasks h3{font-size:18px;margin:17px 0 7px;letter-spacing:-.35px}
+.pain-tasks p{font-size:12px;line-height:1.5;color:#5d5d65;margin:0}
+.use-cases{padding-top:28px;padding-bottom:24px}
+.use-cases h2{font-size:36px;margin:12px 0 20px}
+.role-grid{gap:11px}
+.role-card{border-radius:17px;padding:18px;min-height:0}
+.role-icon{width:39px;height:39px;border-radius:10px;font-size:14px;font-weight:900}
+.role-card h3{font-size:20px;margin:16px 0 7px}
+.role-card p{font-size:13px;line-height:1.5;color:#5b5b64;margin:0}
+.audience-paths{padding-top:30px;padding-bottom:30px}
+.audience-paths h2{font-size:36px;margin:12px 0 20px}
+.profession-grid{gap:10px;margin:0}
+.profession-grid article{border-radius:17px;padding:18px}
+.profession-grid h3{font-size:18px;margin:9px 0 7px}
+.profession-grid p{font-size:12.5px;line-height:1.52}
+#program{padding-top:46px}
+#program>h2{margin-bottom:20px}
+.lesson{padding:23px;margin:10px 0}
+.lesson h3{margin:8px 0;font-size:24px}
+.lesson p{font-size:13px;margin:7px 0}
+.result{margin-top:13px;padding:12px 15px}
+
+@media(max-width:1000px){
+  .role-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pain-offer{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .hero{padding-bottom:28px}
+  h1{font-size:clamp(42px,12.2vw,52px);line-height:1.03}
+  .hero-duration{margin:16px 0 20px}
+  .promo-chip{font-size:11px}
+  .ai-map-gift{grid-template-columns:auto 1fr;gap:12px;padding-top:15px;padding-bottom:15px;margin-top:10px;border-radius:16px}.gift-mark{width:42px;height:42px;border-radius:12px;font-size:22px}.ai-map-gift h2{font-size:17px;margin:3px 0}.ai-map-gift p{font-size:10px;line-height:1.35}.ai-map-gift .button{grid-column:1/-1;width:100%;padding:13px 15px;font-size:12px}.ai-map-gift:after{right:-45px;top:-35px;width:180px;height:100px}
+  .pain-offer{padding-top:20px;padding-bottom:19px;gap:9px}
+  .pain-copy{padding:20px;border-radius:18px}
+  .pain-copy h2{font-size:27px;margin:9px 0 12px}
+  .pain-copy p{font-size:12px;line-height:1.52;margin-bottom:13px}
+  .pain-answer{font-size:14px}
+  .pain-tasks{gap:6px}
+  .pain-tasks article{padding:11px 8px;border-radius:13px}
+  .pain-tasks span{width:27px;height:27px;border-radius:8px;font-size:10px}
+  .pain-tasks h3{font-size:14px;margin:10px 0 5px}
+  .pain-tasks p{font-size:10px;line-height:1.35}
+  .use-cases{padding-top:20px;padding-bottom:17px}
+  .use-cases h2,.audience-paths h2{font-size:28px;margin:9px 0 15px}
+  .role-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .role-card{padding:11px 8px;border-radius:13px}
+  .role-icon{width:29px;height:29px;border-radius:8px;font-size:10px}
+  .role-card h3{font-size:13px;line-height:1.15;margin:9px 0 5px;letter-spacing:-.25px}
+  .role-card p{font-size:9.5px;line-height:1.35}
+  .audience-paths{padding-top:20px;padding-bottom:20px}
+  .profession-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .profession-grid article{padding:12px 10px;border-radius:13px}
+  .agent-tag{font-size:8px;letter-spacing:.55px}
+  .profession-grid h3{font-size:14px;line-height:1.15;margin:7px 0 5px}
+  .profession-grid p{font-size:10px;line-height:1.36}
+  .pain-offer:after{width:250px;height:120px;opacity:.13}
+  .audience-paths:after{width:270px;height:130px;opacity:.12}
+  #program{padding-top:32px}
+  .lesson{padding:17px 13px;margin:7px 0}
+  .lesson h3{font-size:20px}
+  .lesson p{font-size:12px;line-height:1.5}
+  .result{font-size:11px;padding:10px 12px}
+}
