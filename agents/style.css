@@ -27,8 +27,8 @@ nav { display: flex; align-items: center; gap: 28px; }
 nav a { text-decoration: none; font-size: 14px; font-weight: 800; }
 .nav-cta { padding: 12px 19px; border-radius: 999px; background: var(--red-dark); color: var(--white); }
 
-.hero { min-height: 680px; padding-block: 58px 82px; }
-.hero-copy { max-width: 980px; }
+.hero { min-height: 680px; padding-block: 58px 82px; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); align-items: center; gap: 44px; }
+.hero-copy { max-width: 760px; }
 .eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 12px; font-weight: 900; letter-spacing: .16em; }
 .eyebrow span { width: 24px; height: 2px; border-radius: 999px; background: var(--red); margin-right: 2px; }
 .eyebrow.light { color: rgba(255,255,255,.74); }
@@ -51,6 +51,13 @@ h2 { margin-bottom: 26px; font-size: clamp(38px, 4.2vw, 60px); }
 .expert-card-copy strong { display: block; margin: 3px 0 4px; font-family: Georgia, "Times New Roman", serif; font-size: 27px; line-height: 1.1; }
 .expert-card-copy span { display: block; color: var(--red); font-size: 11px; font-weight: 900; letter-spacing: .12em; }
 .expert-card-copy p { margin: 0; color: #5a5758; font-size: 14px; line-height: 1.5; }
+.personal-ai-visual { position: relative; align-self: stretch; min-height: 570px; overflow: hidden; border: 1px solid rgba(38,37,38,.08); border-radius: 34px; background: var(--white); box-shadow: var(--shadow); }
+.personal-ai-visual::before { content: ""; position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, transparent 48%, rgba(38,37,38,.86) 100%); pointer-events: none; }
+.personal-ai-visual::after { content: ""; position: absolute; z-index: 2; top: 23px; right: 23px; width: 70px; height: 70px; border: 1px solid rgba(227,27,42,.35); border-radius: 50%; box-shadow: -55px 34px 0 -31px #f4c400, -96px -7px 0 -26px rgba(227,27,42,.18); pointer-events: none; }
+.personal-ai-visual img { width: 100%; height: 100%; min-height: 570px; object-fit: cover; object-position: 66% 50%; }
+.visual-note { position: absolute; z-index: 3; left: 28px; right: 28px; bottom: 28px; padding: 21px 23px; border: 1px solid rgba(255,255,255,.2); border-radius: 18px; background: rgba(38,37,38,.86); color: var(--white); backdrop-filter: blur(8px); }
+.visual-note span { display: block; margin-bottom: 8px; color: #ffd400; font-size: 10px; font-weight: 900; letter-spacing: .14em; }
+.visual-note strong { display: block; max-width: 360px; font-family: Georgia, "Times New Roman", serif; font-size: 25px; line-height: 1.13; }
 
 .section { padding-block: 96px; }
 .section-lead { max-width: 720px; font-size: 21px; color: rgba(255,255,255,.74); }
@@ -162,6 +169,10 @@ h2 { margin-bottom: 26px; font-size: clamp(38px, 4.2vw, 60px); }
 
 @media (max-width: 980px) {
   .section-grid, .about-grid, .digital-grid { grid-template-columns: 1fr; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-copy { max-width: 900px; }
+  .personal-ai-visual { min-height: 430px; }
+  .personal-ai-visual img { min-height: 430px; object-position: 68% 44%; }
   .hero { padding-top: 52px; }
   .audience-grid, .steps { grid-template-columns: repeat(2, 1fr); }
   .steps article:nth-child(2) { border-right: 0; }
@@ -176,7 +187,7 @@ h2 { margin-bottom: 26px; font-size: clamp(38px, 4.2vw, 60px); }
   .topbar { min-height: 72px; }
   nav > a:not(.nav-cta) { display: none; }
   .nav-cta { padding: 10px 13px; font-size: 12px; }
-  .hero { min-height: auto; gap: 42px; padding-block: 45px 60px; }
+  .hero { min-height: auto; gap: 30px; padding-block: 35px 48px; }
   .hero-copy { min-width: 0; max-width: 100%; }
   h1 { max-width: 100%; font-size: clamp(32px, 9.8vw, 46px); }
   h2 { font-size: clamp(36px, 11vw, 52px); }
@@ -188,6 +199,10 @@ h2 { margin-bottom: 26px; font-size: clamp(38px, 4.2vw, 60px); }
   .expert-card > img { width: 82px; height: 82px; }
   .expert-card-copy strong { font-size: 23px; }
   .expert-card-copy p { font-size: 13px; }
+  .personal-ai-visual { min-height: 350px; border-radius: 24px; }
+  .personal-ai-visual img { min-height: 350px; object-position: 69% 46%; }
+  .visual-note { left: 15px; right: 15px; bottom: 15px; padding: 16px; border-radius: 14px; }
+  .visual-note strong { font-size: 20px; }
   .card-one { top: 72px; left: 10px; }
   .card-two { right: 10px; bottom: 108px; }
   .floating-card { min-width: 172px; padding: 9px 11px; font-size: 11px; }
