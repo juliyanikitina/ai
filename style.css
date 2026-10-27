@@ -197,7 +197,7 @@ h1{font-size:48px;letter-spacing:-2.5px}
 @media(max-width:760px){.hero-person{justify-content:flex-start}.hero-person img{order:0;width:72px;height:72px}.ai-hero-visual{min-height:205px}.campaign-visual{padding-left:16px;padding-right:16px}.campaign-visual>img{border-radius:20px}}
 @media(max-width:420px){.hero-person img{width:64px;height:64px}.hero-person strong{font-size:15px}.ai-hero-visual{min-height:180px}.ai-hero-visual>div{left:18px;top:22px;max-width:160px}.ai-hero-visual strong{font-size:20px}.campaign-visual{margin-top:8px}.campaign-visual>img{border-radius:15px}}
 
-/* Selling compact layout for the 29–30 October cohort. */
+/* Selling compact layout for the 5–6 November cohort. */
 body{overflow-x:hidden}
 .promo-chip{background:#ff2400!important;color:#fff!important;font-size:13px;font-weight:800;letter-spacing:.2px}
 .pain-offer,.audience-paths,.join{position:relative;overflow:hidden;isolation:isolate}
