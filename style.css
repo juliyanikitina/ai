@@ -354,5 +354,5 @@ h1 em{background:transparent;color:var(--brand-red);padding:0;margin-top:0}
 @media(max-width:760px){
   .ai-hero-visual{min-height:205px}
   .ai-hero-visual img{object-position:48% 54%}
-  .ai-hero-visual:after{background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.86) 30%,rgba(255,255,255,.08) 62%)}
+  .ai-hero-visual:after{bottom:38%;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.86) 30%,rgba(255,255,255,.08) 62%)}
 }
