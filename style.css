@@ -281,3 +281,74 @@ body{overflow-x:hidden}
   .lesson p{font-size:12px;line-height:1.5}
   .result{font-size:11px;padding:10px 12px}
 }
+
+/* Red brand theme: aligned with the personal «ИИ-агенты под ключ» landing. */
+:root{
+  --paper:#f6f2ec;
+  --ink:#262526;
+  --muted:#5a5758;
+  --line:rgba(38,37,38,.12);
+  --lime:#f1f1f1;
+  --brand-red:#e31b2a;
+  --brand-graphite:#454347;
+  --brand-white:#fffdfb;
+}
+body{background:var(--paper);color:var(--ink)}
+.brand span{color:var(--brand-red);font-weight:900}
+.brand b{background:#f1f1f1;color:var(--brand-red)}
+.nav-button,#enroll{background:var(--brand-red);border-color:var(--brand-red);color:#fff}
+.nav-button:hover,#enroll:hover{background:var(--brand-red);border-color:var(--brand-red);filter:brightness(.9)}
+.hero-copy{background:var(--brand-white);border-color:var(--brand-white)}
+.hero-copy>.eyebrow,.hero-copy .dot{color:var(--brand-red)}
+.hero-copy .dot{background:var(--brand-red)}
+h1 em{background:transparent;color:var(--brand-red);padding:0;margin-top:0}
+.button{background:var(--brand-red);border-radius:999px;color:#fff}
+.button:hover{background:var(--brand-red);filter:brightness(.9)}
+.hero-duration span{background:#f1f1f1;color:var(--ink);border:1px solid var(--line)}
+.hero-person img{border-color:var(--brand-red);box-shadow:0 0 0 2px var(--brand-white)}
+.workspace{background:var(--brand-white);color:var(--ink);border-color:var(--line);box-shadow:0 24px 70px rgba(54,43,42,.12)}
+.window-top{border-color:var(--line);color:#777}
+.workspace-label{color:#777}
+.workspace h2{color:var(--ink)}
+.ai-hero-visual{min-height:245px;background:var(--brand-white);border-color:var(--line)}
+.ai-hero-visual:after{background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.94) 40%,rgba(255,255,255,.12) 78%)}
+.ai-hero-visual img{object-position:70% 23%}
+.ai-hero-visual>div{max-width:235px}
+.ai-hero-visual span{color:var(--brand-red)}
+.ai-hero-visual strong{color:var(--ink)}
+.ai-hero-visual small{color:#625e60}
+.agent-card{background:#fff;border-color:var(--line);color:var(--ink)}
+.agent-card:nth-child(4){background:#f1f1f1}
+.agent-card p{color:#666}
+.avatar.mint,.avatar.yellow,.role-icon,.lesson-symbol{background:var(--brand-red);color:#fff}
+.avatar.pink{background:#f1f1f1;color:var(--ink)}
+.arrow{color:var(--brand-red)}
+.ai-map-gift{background:var(--brand-white);border:1px solid rgba(227,27,42,.28);box-shadow:0 14px 38px rgba(54,43,42,.06)}
+.ai-map-gift span{color:var(--brand-red)}
+.ai-map-gift p{color:#5a5758}
+.gift-mark{background:var(--brand-red)}
+.ai-map-gift .button{background:var(--brand-red)}
+.pain-copy{background:var(--brand-graphite)}
+.pain-copy .eyebrow,.pain-answer{color:#ffd5da}
+.pain-tasks article,.role-card,.profession-grid article,.lesson,.join>div:first-child,.faq details{background:var(--brand-white);border-color:var(--line)}
+.pain-tasks span{background:var(--brand-red)}
+.role-icon{box-shadow:none}
+.agent-tag,.lesson .day,.lesson .day span,.gift-label{color:var(--brand-red)}
+.result{background:#f1f1f1;border-color:#e5e2e2}
+.bonus-card{background:#f1f1f1;border-color:#dfdcdc}
+.gift-icon{background:var(--brand-red);box-shadow:none}
+.dark-section{background:var(--brand-graphite)}
+.format-grid b{color:#ffd5da}
+.format-button{background:var(--brand-red);color:#fff}
+.format-button:hover{background:var(--brand-red)}
+.price-card{background:var(--brand-white);border-color:var(--line)}
+.price-label{background:var(--brand-red);color:#fff}
+.price-card li,.price-card li:first-child{background:#f1f1f1;border-color:#dfdcdc;color:#413f40}
+.price-card li:before,.price-card li strong{color:var(--ink)}
+.price-card .button{background:var(--brand-red);color:#fff}
+.price-card .button:hover{background:var(--brand-red)}
+.price-note{background:#f1f1f1;border-color:#dfdcdc;color:#5a5758}
+.promo-chip{background:var(--brand-red)!important}
+.pain-offer:after,.audience-paths:after,.join:after,.ai-map-gift:after{display:none}
+:focus-visible{outline-color:var(--brand-red)}
+@media(max-width:760px){.ai-hero-visual img{object-position:74% 22%}}
