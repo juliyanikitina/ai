@@ -312,7 +312,7 @@ h1 em{background:transparent;color:var(--brand-red);padding:0;margin-top:0}
 .workspace h2{color:var(--ink)}
 .ai-hero-visual{min-height:245px;background:var(--brand-white);border-color:var(--line)}
 .ai-hero-visual:after{background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.94) 40%,rgba(255,255,255,.12) 78%)}
-.ai-hero-visual img{object-position:70% 23%}
+.ai-hero-visual img{object-position:52% 50%}
 .ai-hero-visual>div{max-width:235px}
 .ai-hero-visual span{color:var(--brand-red)}
 .ai-hero-visual strong{color:var(--ink)}
@@ -351,4 +351,4 @@ h1 em{background:transparent;color:var(--brand-red);padding:0;margin-top:0}
 .promo-chip{background:var(--brand-red)!important}
 .pain-offer:after,.audience-paths:after,.join:after,.ai-map-gift:after{display:none}
 :focus-visible{outline-color:var(--brand-red)}
-@media(max-width:760px){.ai-hero-visual img{object-position:74% 22%}}
+@media(max-width:760px){.ai-hero-visual img{object-position:58% 50%}}
