@@ -371,9 +371,10 @@ h1 em{background:transparent;color:var(--brand-red);padding:0;margin-top:0}
 @media(max-width:420px){.ai-hero-visual{min-height:0}.ai-hero-visual img{height:210px}.ai-hero-visual>div{left:10px;bottom:10px;max-width:168px;padding:9px 10px}.ai-hero-visual strong{font-size:17px}}
 
 /* Keep the sales badge in the free upper-left corner of the Julia + Astra visual. */
-.ai-hero-visual>div{left:16px;top:16px;bottom:auto}
-@media(max-width:760px){.ai-hero-visual>div{left:12px;top:12px;bottom:auto}}
-@media(max-width:420px){.ai-hero-visual>div{left:10px;top:10px;bottom:auto}}
+.ai-hero-visual>div{left:12px;top:12px;bottom:auto;max-width:180px;padding:10px 12px}
+.ai-hero-visual>div strong{font-size:19px;line-height:1.02}
+@media(max-width:760px){.ai-hero-visual>div{left:8px;top:8px;bottom:auto;max-width:132px;padding:7px 8px}.ai-hero-visual>div strong{font-size:14px;line-height:1.03}}
+@media(max-width:420px){.ai-hero-visual>div{left:7px;top:7px;bottom:auto;max-width:124px;padding:7px}.ai-hero-visual>div strong{font-size:13px}}
 
 /* Simplified sales flow: program, audience, format and one participation card. */
 .agent-tag{font-size:12px;font-weight:900;letter-spacing:1.15px}
