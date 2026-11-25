@@ -148,4 +148,4 @@ summary:after{color:#ebc574}
 .hero-portrait .speaker-description{font-size:16px;line-height:1.55;color:var(--ink);margin:10px 0 0}
 .hero-portrait figcaption .speaker-proof{font-size:14px;letter-spacing:0;line-height:1.55;color:var(--gold);margin:13px 0 0}
 .legal-footer{flex-basis:100%;width:100%;border-top:1px solid #bd944c55;margin-top:22px;padding-top:22px;color:#c5bcad;font-size:13px;line-height:1.7}.legal-footer p{margin:0 0 9px}.legal-footer nav{display:flex;flex-wrap:wrap;gap:12px 28px}.legal-footer a{color:#dfbf80;text-decoration:underline;text-underline-offset:4px}.footer{flex-wrap:wrap}
-.social-links{display:flex;gap:16px;flex-wrap:wrap;padding-bottom:32px}.social-button{min-width:170px;justify-content:center;font-size:16px;padding:15px 25px}@media(max-width:480px){.social-links{gap:12px}.social-button{flex:1;min-width:140px;padding:14px 18px}}
+.social-links{display:flex;gap:16px;flex-wrap:wrap;width:100%;padding-top:8px}.social-button{min-width:170px;justify-content:center;font-size:16px;padding:15px 25px}@media(max-width:480px){.social-links{gap:12px}.social-button{flex:1;min-width:140px;padding:14px 18px}}
