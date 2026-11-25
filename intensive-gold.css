@@ -134,3 +134,13 @@ details p{font-size:16px;color:var(--muted);margin:15px 35px 0 0}
 .price-label{display:inline-block;padding:7px 13px;border:1px solid #cba45e99;border-radius:6px;color:#f3d99e;background:#bd944818}
 .price{color:#f6d58b}
 summary:after{color:#ebc574}
+/* Three roles, three numbered steps, three clearly framed audiences. */
+.agent-card{background:linear-gradient(120deg,#eddaa9,#c9a568 78%,#dfbd7e);border-color:#edcd91;box-shadow:inset 0 1px 0 #fff0c6;color:#291f10}
+.agent-card h3{color:#291f10;font-weight:700}
+.agent-card p{color:#47371e}
+.agent-card .avatar{background:#3b2c19;border-color:#8d6b37;color:#f5d99e}
+.lesson .day{width:68px;height:68px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:50%;background:linear-gradient(135deg,#f1d99f,#c79c51);border:1px solid #eed399;box-shadow:inset 0 1px 0 #fff0c6,0 5px 18px #0002;color:#302310;font-size:27px;font-weight:600;letter-spacing:-1px;line-height:1.1}
+.lesson .day span{color:#433016;font-size:12px;letter-spacing:.6px;line-height:1.2;margin:0}
+.agent-tag{display:inline-flex;align-items:center;justify-content:center;border:1px solid #d7af67;border-radius:99px;background:linear-gradient(120deg,#ae833422,#e5bf6920);padding:9px 17px;line-height:1.2;color:#f6d895;font-size:14px;font-weight:700;letter-spacing:.7px;box-shadow:inset 0 1px 0 #f6d58a16}
+@media(min-width:481px) and (max-width:820px){.lesson{grid-template-columns:68px 1fr}}
+@media(max-width:480px){.lesson .day{width:62px;height:62px;font-size:25px}.lesson .day span{font-size:12px}.agent-tag{font-size:13px;padding:9px 16px}}
