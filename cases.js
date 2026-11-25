@@ -32,7 +32,8 @@ if (track && cards.length && dialog && typeof dialog.showModal === 'function') {
   track.addEventListener('scroll', updateCounter, {passive: true});
   window.addEventListener('resize', updateCounter);
   document.querySelectorAll('[data-cases-step]').forEach(button => button.addEventListener('click', () => {
-    const next = (Math.round(track.scrollLeft / stepSize()) + Number(button.dataset.casesStep) + cards.length) % cards.length;
+    const current = Math.min(cards.length - 1, Math.round(track.scrollLeft / stepSize()));
+    const next = (current + Number(button.dataset.casesStep) + cards.length) % cards.length;
     track.scrollTo({left: next * stepSize(), behavior: reduceMotion.matches ? 'instant' : 'smooth'});
   }));
   dialog.querySelector('.case-dialog-close').addEventListener('click', () => dialog.close());
